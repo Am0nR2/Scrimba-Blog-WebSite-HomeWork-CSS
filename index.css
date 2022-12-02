@@ -175,6 +175,12 @@ footer{
     opacity: 0.6;
 }
 
+@media(max-width: 768px){
+    .blog-images{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
 /* Home Page */
 
 .aboutme{
