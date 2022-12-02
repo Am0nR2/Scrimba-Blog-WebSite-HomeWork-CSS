@@ -46,6 +46,12 @@ header nav ul li:hover{
         font-size: 1em;
     }
 }
+@media (max-width: 480px){
+    header h1,
+    header nav ul li{
+        font-size: 0.75em;
+    }
+}
 
 
 
@@ -97,7 +103,14 @@ header nav ul li:hover{
     .content{
         width: 400px;
     }
+ }
+@media (max-width: 480px){
+        .subtitle,
+        .content{
+        width: 300px;
+        }
 }
+
 /* Blog Images */
 
 .blog-images{
