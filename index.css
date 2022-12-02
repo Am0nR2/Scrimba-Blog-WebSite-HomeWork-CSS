@@ -1,0 +1,226 @@
+*{
+   
+ font-family: 'Source Sans Pro', sans-serif;
+ box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+/* Header */
+header{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    justify-content: space-between;
+}
+header h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #0E0E0E;
+}
+
+header,
+header nav ul,
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+header nav ul li{
+    list-style: none;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #090909;
+}
+header nav ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* Header Media */
+@media (max-width: 600px){
+    header h1,
+    header nav ul li{
+        font-size: 1em;
+    }
+}
+
+
+
+/* Main Image Area */
+
+.main-image{
+    background-image: url("/ScrimbaBlogHomeWork/images/blog-image-hero.png");
+    width: 100%;
+    height: 488px;
+    background-size: cover;
+    color: #FFFFFF;
+    background-position: center;
+    position: relative;
+}
+.content{
+    position: absolute;
+    width: 650px;
+    bottom: 2em;
+    left: 2.5em;
+}
+.subtitle{
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 700px;
+}
+.date{
+    opacity: 0.6;
+    margin-bottom: 0.25em;
+}
+.content-text{
+    margin-top: 0.5em;
+}
+/* Main Image Media */
+@media (max-width: 768px){
+    .subtitle,
+    .content{
+        width: 600px;
+    }
+}
+@media (max-width: 650px){
+    .subtitle,
+    .content{
+        width: 500px;
+    }
+}
+@media (max-width: 550px){
+    .subtitle,
+    .content{
+        width: 400px;
+    }
+}
+/* Blog Images */
+
+.blog-images{
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    gap: 1em;
+    align-items: center;
+}
+
+.blog-subtitle{
+    font-size: 1.5em;
+    color: #141414;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.blog-date{
+    font-size: .875em;
+    color: #000000;
+    margin-top: 0.5em;
+    margin-bottom: 0.6em;
+}
+.blog-text{
+    color: #505050;
+    margin-top: 0.5em;
+}
+.blog-img{
+    width: 100%;
+}
+.view-more{
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 2em;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ECECEC;
+    background: #202020;
+    height: 105px;
+}
+.copyright,
+.footer-text{
+    font-size: 0.75em;
+    margin: 0px auto;
+}
+.copyright{
+    opacity: 0.6;
+}
+
+/* Home Page */
+
+.aboutme{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.home-img{
+    width: 95%;
+    margin: 0 auto;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+}
+.home-blog-title{
+    font-size: 2.25em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.home-blog-subtitle{
+    margin-top: 0px;
+}
+.home-blog-text{
+    margin-bottom: 0px;
+}
+.recent{
+    width: 150px;
+    margin: 0 auto;
+}
+ 
+/* About me */
+.me{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+.aboutme-pic{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 2em;
+    gap: 2em;
+}
+@media (max-width: 768px){
+    .me{
+        display: block;
+        margin: 1em auto;
+    }
+    .aboutme-pic{
+        display: block;
+        width: 100%;
+     
+    }
+
+}
+.black{
+ background-color:  #151515 ;
+ color: rgb(214, 206, 206);
+ padding: 1em 0;
+ margin-bottom: 1em;
+}
