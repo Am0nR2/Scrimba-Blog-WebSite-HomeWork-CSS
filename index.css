@@ -115,8 +115,11 @@ header nav ul li:hover{
 
 .blog-images{
     padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
+    /* padding-left: 2em; */
+    /* padding-right: 2em; */
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     gap: 1em;
@@ -219,6 +222,7 @@ border-radius: 50%;
     margin-top: 2em;
     gap: 2em;
 }
+
 @media (max-width: 768px){
     .me{
         display: block;
@@ -229,6 +233,7 @@ border-radius: 50%;
         width: 100%;
      
     }
+    
 
 }
 .black{
